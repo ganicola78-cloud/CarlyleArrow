@@ -39,9 +39,10 @@ jobs:
 
       - name: Compila APK orologio
         run: gradle --no-daemon -p project/carlyle_arrow_v2 :app:assembleDebug
+
       - name: Salva APK orologio
         uses: actions/upload-artifact@v4
         with:
           name: CarlyleArrow-watch-apk
-          path: project/app/build/outputs/apk/debug/app-debug.apk
+          path: project/carlyle_arrow_v2/app/build/outputs/apk/debug/app-debug.apk
           if-no-files-found: error
