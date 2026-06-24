@@ -35,7 +35,7 @@ jobs:
         run: |
           rm -rf project
           mkdir project
-          unzip -oq "CarlyleArrow_WearOS2_v5_Diagnostic.zip" -d project
+          unzip -oq "CarlyleArrow_WearOS2_v6_ServiceDiagnostic.zip" -d project
 
       - name: Compila APK orologio
         run: gradle --no-daemon -p project :app:assembleDebug
