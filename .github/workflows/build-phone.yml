@@ -35,14 +35,14 @@ jobs:
         run: |
           rm -rf project
           mkdir project
-          unzip -oq "CarlyleArrow_PhoneCompanion_v3.zip" -d project
+          unzip -oq "CarlyleArrow_PhoneCompanion_v5_Diagnostic.zip" -d project
 
       - name: Compila APK telefono
-        run: gradle --no-daemon -p project/carlyle_arrow_phone_v3 :app:assembleDebug
+        run: gradle --no-daemon -p project :app:assembleDebug
 
       - name: Salva APK telefono
         uses: actions/upload-artifact@v4
         with:
           name: CarlyleArrow-phone-apk
-          path: project/carlyle_arrow_phone_v3/app/build/outputs/apk/debug/app-debug.apk
+          path: project/app/build/outputs/apk/debug/app-debug.apk
           if-no-files-found: error
