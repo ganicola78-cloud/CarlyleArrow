@@ -35,7 +35,7 @@ jobs:
         run: |
           rm -rf watch
           mkdir watch
-          unzip -oq "CarlyleArrow_WearOS2_v7_Vibration100_10.zip" -d watch
+          unzip -oq "CarlyleArrow_WearOS2_v8_VibrationToggle.zip" -d watch
 
       - name: Estrai app telefono
         run: |
