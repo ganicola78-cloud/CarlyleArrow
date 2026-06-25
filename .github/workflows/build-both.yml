@@ -35,7 +35,7 @@ jobs:
         run: |
           rm -rf watch
           mkdir watch
-          unzip -oq "CarlyleArrow_WearOS2_v11_MotoSymbols.zip" -d watch
+          unzip -oq "CarlyleArrow_WearOS2_v12_MotoSymbolsFit.zip" -d watch
 
       - name: Estrai app telefono
         run: |
