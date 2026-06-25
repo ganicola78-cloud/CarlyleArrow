@@ -41,7 +41,7 @@ jobs:
         run: |
           rm -rf phone
           mkdir phone
-          unzip -oq "CarlyleArrow_PhoneCompanion_v6_ServiceDiagnostic.zip" -d phone
+          unzip -oq "CarlyleArrow_PhoneCompanion_v9_Accessibility.zip" -d phone
 
       - name: Compila APK orologio
         run: gradle --no-daemon -p watch :app:assembleDebug
